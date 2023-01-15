@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> String-repeat </title>
+</head>
+
+<body>
+  <h2>Write a function that accepts an integer n and a string s as parameters,
+    and returns a string of s repeated exactly n times.</h2>
+  <script>
+    function reapetStr(n, s) {
+      if (typeof n === "number") {
+        return s.repeat(n);
+      }
+    }
+    console.log(reapetStr(29, "Hi"));
+    console.log(reapetStr(6, "Hello"));
+
+  </script>
+</body>
+
+</html>

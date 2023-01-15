@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum-Without-The-Highest-And-The-Lowest-Number</title>
+</head>
+
+<body>
+    <h2>Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+
+        The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+        
+        Mind the input validation. </h2>
+    <script>
+        //check if empty value return 0
+        //find the heighest number;
+        //find the lowest number;
+        ///filter the Array;
+        //sum all number in the array;
+
+        let arr = [1, 3, 5, 10];
+
+        let min =Math.min(...arr)
+        let max =Math.max(...arr)
+        console.log(min);
+        console.log(max);
+
+        function add(arr) {
+            let min = Math.min(...arr); 
+            let max = Math.max(...arr) ;
+             let fil = arr.filter((x)=>x !== min && x !== max);
+            let reduce =fil.reduce((acc ,cuu)=> acc + cuu)
+            return   reduce
+        }
+       console.log(add([11,5,2,1]));
+    </script>
+</body>
+
+</html>

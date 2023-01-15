@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert-number-to-reversed-array </title>
+</head>
+
+<body>
+    <h2>Given a random non-negative number, you have to return the digits of this number within an array in reverse order.</h2>
+    <script>
+        console.log("One");
+        let str = "987654321";
+        let arr = str.split('').map(function (el) {
+            return Number(el);
+        })
+        console.log(arr.reverse());   ///output [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        ///////////// 
+        console.log("Two");
+        function num(array) {
+            return Array.from(array)
+        }
+        console.log(num('123456789').reverse());
+        /////////////
+        console.log("Three");
+        let loop = "987654321";
+        let arra = [];
+        for (let i = 0; i < loop.length; i++) {
+
+            arra.push(+loop[i])
+        }
+        console.log(arra.reverse());
+        /////////////////////////
+        // console.log("Four");
+        // let nums = "987654321";
+        // for (let i = 0; i < nums.length; i++) {
+        //    console.log( nums[i].split(""));
+        // }
+        ///////////////
+        function digitize(n) {
+            return n.toString().split('').map((e) => Number(e)).reverse() 
+        }
+        digitize('12345') 
+    </script>
+</body>
+
+</html>
