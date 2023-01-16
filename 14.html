@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Write a method, that will get an integer array as parameter and will process every number from this array.
+
+        Return a new array with processing every number of the input-array like this:
+
+        If the number has an integer square root, take this, otherwise square the number.</h2>
+        <!-- لو الرقم  ليه جزر تربيعي خد الجزر  ولو ملهوش اضربه ف 2 -->
+    <script>
+        // let arr = [4, 3, 9, 7, 2, 1];/// [4, 3, 9, 7, 2, 1]
+        // let newArray=[];
+        // for (let i = 0; i < arr.length; i++) {
+        //    if (Number.isInteger(Math.sqrt(arr[i]))) {
+        //     newArray.push(Math.sqrt(arr[i]))
+        //    }else{
+        //     newArray.push(arr[i] * arr[i])
+        //    }
+        // }
+            // console.log(newArray );
+
+        // [4,3,9,7,2,1] -> [2,9,3,49,4,1]
+        function squareOrSquareRoot(array) {
+            let newArray=[];
+        for (let i = 0; i < array.length; i++) {
+           if (Number.isInteger(Math.sqrt(array[i]))) {
+            newArray.push(Math.sqrt(array[i]))
+           }else{
+            newArray.push(array[i] * array[i])
+           }
+        }
+        return newArray
+        }
+        console.log(squareOrSquareRoot([4,3,9,7,2,1]));////output [2, 9, 3, 49, 4, 1]
+    </script>
+</body>
+
+</html>
