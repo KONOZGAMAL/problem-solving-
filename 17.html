@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invert Values</title>
+</head>
+
+<body>
+    <h2>Given a set of numbers, return the additive inverse of each.
+        Each positive becomes negatives,
+        and the negatives become positives.</h2>
+    <script>
+        function invert(array) {
+            return array.map((e) => { return -e })
+        }
+        console.log(invert([1, 2, -3, 4, -5, -6, 7, -8]));
+        //////////////two
+        function inver(array) {
+            let arr = []
+            for (let i = 0; i < array.length; i++) {
+                arr.push(-array[i])
+            }
+            return arr
+        }
+        console.log(inver([1, 2, -3, 4, -5, -6, 7, -8]));
+        ///////////////
+        function inve(arr) {
+          return arr.map((e)=> e* -1)
+        }
+        console.log(inve([1, 2, -3, 4, -5, -6, 7, -8]));
+    </script>
+</body>
+
+</html>
