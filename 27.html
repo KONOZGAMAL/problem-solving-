@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Switch It Up</title>
+</head>
+
+<body>
+    <p>When provided with a number between 0-9, return it in words.
+
+        Input :: 1
+
+        Output :: "One".
+
+        If your language supports it, try using a switch statement.</p>
+    <script>
+        // Solution
+        //switch 
+        ///////////////////one
+        console.log("_".repeat(20) + "One");
+        function switchItUp(number) {
+            switch (number) {
+                case 0:
+                    return "Zero"
+                    break;
+                case 1:
+                    return "One"
+                    break;
+                case 2:
+                    return "Two"
+                    break;
+                case 3:
+                    return "Three"
+                    break;
+                case 4:
+                    return "Four"
+                    break;
+                case 5:
+                    return "Five"
+                    break;
+                case 6:
+                    return "Six"
+                    break;
+                case 7:
+                    return "Seven"
+                    break;
+                case 8:
+                    return "Eight"
+                    break;
+                case 9:
+                    return "Nine"
+                    break;
+                default:
+                    return "wrong Number"
+                    break;
+            }
+        }
+        console.log(switchItUp(9));
+        console.log(switchItUp(99));
+        /////////////////////////////////////////Two
+        console.log("_".repeat(20) + "Two");
+
+        let obj = {
+            0: "Zero",
+            1: "One",
+            2: "Two",
+            3: "Three",
+            4: "Four",
+            5: "Five",
+            6: "Six",
+            7: "Seven",
+            8: "Eight",
+            9: "Nine",
+        }
+        function number(o) {
+            if (obj.hasOwnProperty(o)) {
+                return obj[o]
+            } else {
+                return "wrong Number"
+            }
+
+        }
+        console.log(number(5));
+        console.log(number(59));
+    </script>
+</body>
+
+</html>

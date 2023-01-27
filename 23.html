@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert a String to a Number </title>
+</head>
+
+<body>
+    <p>Note: This kata is inspired by Convert a Number to a String!. Try that one too.
+
+        Description
+        We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+        Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an
+        integral number.</p>
+    <script>
+     /////////////////one
+     console.log("_".repeat(20)+ "one");
+        var stringToNumber =function(str) {
+            return Number(str)
+        }
+        console.log(stringToNumber("234"));
+        console.log(typeof stringToNumber("234"));
+        ////////////////two
+        console.log("_".repeat(20)+ "two");
+        var string =function(str) {
+            return parseInt(str)
+        }
+        console.log( string("22"));
+        console.log( typeof string("22"));
+        ////////////////// three
+        console.log("_".repeat(20)+ "three");
+         var stringTo =function(str) {
+            return parseFloat(str)
+        }
+        console.log( stringTo("223"));
+        console.log(typeof stringTo("223"));
+          ////////////////// four
+          console.log("_".repeat(20)+ "four");
+         var stringto =function(str) {
+            return +str
+        }
+        console.log( stringto("36"));
+        console.log(typeof stringto("36"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Smash</title>
+</head>
+
+<body>
+    <p>Write a function that takes an array of words and smashes them together into a sentence and returns the sentence.
+        You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be
+        careful,
+        there shouldn't be a space at the beginning or the end of the sentence!</p>
+    <script>
+        /////////////one
+        console.log("_".repeat(20)+"One");
+        function smash(words) {
+            return words.join(" ")
+        };
+
+        console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+        //////////////two
+        console.log("_".repeat(20)+"Two");
+        function smash(words) {
+            return String(words).replace(/,/g, " ")
+        };
+
+        console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+        /////////////////////////////
+
+    </script>
+</body>
+
+</html>

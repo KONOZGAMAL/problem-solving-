@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exclamation marks </title>
+</head>
+
+<body>
+    <p>Remove an exclamation mark from the end of a string. For a beginner kata,
+        you can assume that the input data is always a string,
+        no need to verify it.</p>
+    <script>
+        ///solution
+        /// regular expression
+    
+        ///////////////////// regular expression
+        console.log("_".repeat(20)+"regular expression");
+        function remove(string) {
+            return string.replace(/!$/,"");
+        }
+
+        console.log(remove("!hi"));
+        console.log(remove("!hi !!!"));
+    </script>
+</body>
+
+</html>
