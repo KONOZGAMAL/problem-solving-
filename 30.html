@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Playing Banjo</title>
+</head>
+
+<body>
+    <p>Create a function which answers the question "Are you playing banjo?".
+        If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+        The function takes a name as its only argument, and returns one of the following strings:</p>
+    <script>
+        ////////////////////one
+        console.log("_".repeat(20)+"one");
+        function areYouPlayingBanjo(name) {
+         if (/^r/ig.test(name) ) {
+            return name+" plays banjo"
+         }else{
+            return name + " does not play banjo"
+
+         }
+        }
+        console.log(areYouPlayingBanjo("Rayheb"));
+        console.log(areYouPlayingBanjo("rayheb"));
+        console.log(areYouPlayingBanjo("koko"));
+        ////////////////////////two
+        console.log("_".repeat(20)+"two");
+        function areYouPlayingBanjo(name) {
+        return /^r/ig.test(name) ? name+" plays banjo" : name + " does not play banjo"
+        }
+        console.log(areYouPlayingBanjo("Rad"));
+        console.log(areYouPlayingBanjo("rad"));
+        console.log(areYouPlayingBanjo("Amire"));
+        /////////////////////////////three
+        console.log("_".repeat(20)+"three");
+        function areYouPlayingBanjo(name) {
+        return name[0].toLocaleLowerCase()=="r" ? name+" plays banjo" : name + " does not play banjo"
+        }
+        console.log(areYouPlayingBanjo("Rad"));
+        console.log(areYouPlayingBanjo("rad"));
+        console.log(areYouPlayingBanjo("maner"));
+        ///////////////////////////////////////four
+        console.log("_".repeat(20)+"four");
+
+        function areYouPlayingBanjo(name) {
+        return name.startsWith("r")||name.startsWith("R") ? name+" plays banjo" : name + " does not play banjo"
+        }
+        console.log(areYouPlayingBanjo("Rad"));
+        console.log(areYouPlayingBanjo("rad"));
+        console.log(areYouPlayingBanjo("may"));
+
+
+    </script>
+</body>
+
+</html>

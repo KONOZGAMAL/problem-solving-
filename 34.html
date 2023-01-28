@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Xor Operator </title>
+</head>
+
+<body>
+    <p>In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.)
+        called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans.
+        It then returns true if exactly one of the two expressions are true, false otherwise. For example:</p>
+    <p>Since we cannot define keywords in Javascript (well, at least I don't know how to do it),
+        your task is to define a function xor(a, b) where a and b are the two expressions to be evaluated.
+        Your xor function should have the behaviour described above,
+        returning true if exactly one of the two expressions evaluate to true, false otherwise.</p>
+    <script>
+        console.log("_".repeat(20)+"One");
+        function xor(a, b) {
+            if (a == true && b == true) {
+                return false
+            } else if (a == true && b == false) {
+                return true
+            } else if (a == false && b == true) {
+                return true
+            } else {
+                return false
+            }
+        }
+        console.log(xor(false, true));
+        console.log(xor(true, true));
+        /////////////////////////////
+        console.log("_".repeat(20)+"Two");
+        function xor(a, b) {
+            return a === b ? false : true;
+        }
+        console.log(xor(false, true));
+        console.log(xor(true, true));
+        ////////////////////////
+        console.log("_".repeat(20)+"Three");
+        function xor(a, b) {
+            return a != b ? true : false;
+        }
+        console.log(xor(false, true));
+        console.log(xor(true, true));
+
+    </script>
+</body>
+
+</html>

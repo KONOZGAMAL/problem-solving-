@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formatting To Decimal Places </title>
+</head>
+
+<body>
+    <p>Each number should be formatted that it is rounded to two decimal places.
+        You don't need to check whether the input is a valid number
+        because only valid numbers are used in the tests.</p>
+    <script>
+        /////////////////
+        console.log("_".repeat(20));
+        function twoDecimalPlaces(n) {
+            return Number(n.toFixed(2))
+            // return +n.toFixed(2)
+        }
+        console.log(twoDecimalPlaces(5.5589));
+
+
+    </script>
+</body>
+
+</html>
