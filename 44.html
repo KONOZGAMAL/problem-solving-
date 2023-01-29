@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Exclamation Marks </title>
+</head>
+
+<body>
+    <p>Write function RemoveExclamationMarks which removes all exclamation marks from a given string.</p>
+    <script>
+        //////////////////
+        console.log("_".repeat(20)+"one");
+        function removeExclamationMarks(s) {
+            return s.match(/[^!]/ig).join("")
+        }
+        console.log(removeExclamationMarks(" Hello World!"));
+        console.log(removeExclamationMarks("!Hello World!"));
+        /////////////////////
+        console.log("_".repeat(20)+"two");
+
+        function removeExcl(s) {
+            return s.replaceAll("!"," ")
+        }
+        console.log(removeExcl(" Hello World!"));
+        console.log(removeExcl("!Hello World!"));
+        ////////////////////////
+        console.log("_".repeat(20)+"three");
+
+        function removeExclamation(s) {
+            return s.split("!").join("")
+        }
+        console.log(removeExclamation("!Hello! World!"));
+
+    </script>
+</body>
+
+</html>

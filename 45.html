@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reversed Strings</title>
+</head>
+
+<body>
+    <p>
+        Complete the solution so that it reverses the string passed into it.
+    </p>
+    <script>
+        ////////
+        console.log("_".repeat(20) + "one");
+        function solution(str) {
+            return str.split("").reverse().join("")
+        }
+        console.log(solution("amire"));
+        ////////////////////
+
+        console.log("_".repeat(20) + "two");
+        function solution(str) {
+            return [...str].reverse().join("")
+        }
+        console.log(solution("amire"));
+        //////////////
+
+        console.log("_".repeat(20) + "three");
+        function solut(str) {
+            return Array.from(str).reverse().join("")
+        }
+        console.log(solut("amire"));
+        ////////////////////
+
+        console.log("_".repeat(20) + "four");
+        function solu(str) {
+            let conut = ""
+            for (let i = str.length - 1; i >= 0; i--) {
+                conut += str[i]
+            }
+            return conut
+        }
+        console.log(solu("amire"));
+
+    </script>
+</body>
+
+</html>
