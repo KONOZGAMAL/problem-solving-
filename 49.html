@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Array elements with Comma delimiters</title>
+</head>
+
+<body>
+    <p>
+        Input: Array of elements
+
+        ["h","o","l","a"]
+
+        Output: String with comma delimited elements of the array in th same order.
+
+        "h,o,l,a"
+
+    </p>
+    <script>
+        console.log("_".repeat(20)+"one"+"_".repeat(20));
+        function printArray(array) {
+           return array.join(",")
+        }
+        console.log(printArray(["h","o","l","a"]) );//h,o,l,a
+        /////////////
+        console.log("_".repeat(20)+"Two"+"_".repeat(20));
+        function print(array) {
+           return array.toString()
+        }
+        console.log(print(["h","o","l","a"]) );//h,o,l,a
+        //////////////////
+        console.log("_".repeat(20)+"Three"+"_".repeat(20));
+        function prin(array) {
+           return String(array)
+        }
+        console.log(prin(["h","o","l","a"]) );//h,o,l,a
+
+    </script>
+</body>
+
+</html>
